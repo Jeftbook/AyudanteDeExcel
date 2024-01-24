@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Leer Excel -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"
+    ></script>
+    <!-- Generar y Descargar Excel -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.2/FileSaver.min.js"
+    ></script>
+  </head>
+  <body>
+    <form action="">
+      <div class="d-grid gap-2 col-6 mx-auto mb-3 mt-4">
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Teatro</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            aria-label="default input example"
+            id="input-teatro"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Obra</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            aria-label="default input example"
+            id="input-obra"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Fecha</span
+          >
+          <input
+            type="date"
+            class="form-control"
+            aria-label="default input example"
+            id="input-fecha"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Autor</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            aria-label="default input example"
+            id="input-autor"
+          />
+        </div>
+        <div class="input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default"
+            >Produccion</span
+          >
+          <input
+            type="text"
+            class="form-control"
+            aria-label="default input example"
+            id="input-produccion"
+          />
+        </div>
+      </div>
+      <div class="mb-3 d-grid gap-2 col-6 mx-auto">
+        <label
+          for="formFile"
+          class="form-label d-flex justify-content-center align-items-center"
+          >Cargue el archivo Excel</label
+        >
+        <input class="form-control" type="file" id="input-excel" />
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-primary" id="descargar-excel">
+          Descargar Excel
+        </button>
+      </div>
+    </form>
+    <script type="text/javascript" src="./excel.js"></script>
+  </body>
+</html>
